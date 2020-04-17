@@ -27,6 +27,15 @@ player = Player(world.starting_room)
 
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
+def mazePath(graph)
+    maze = []
+    rooms = []
+    entered = set()
+    maze.append(0)
+    
+    while len(entered) < len(graph):
+        current_room = maze[-1]
+        
 traversal_path = []
 
 
