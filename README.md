@@ -66,7 +66,10 @@ My best path is 957 moves. Can you find a shorter path?
         Graph contains 500 rooms. must visit every room once and with the fewest moves (at least 2000 or less for MVP)
         run a traversal and build a graph
 # Plan:
-BFT, use a dictionary as visited
+BFT, will have a lot of backtracking and backtracking counts as moves.
+DFT, will have less backtracking 
+
+use a dictionary as visited
 building graph as we go
 
         nodes: Rooms  (room)
@@ -82,9 +85,17 @@ Has it been explored?
     if no: preform BFS with this as starting node
     yes: next node
 
+One list tracking all moves:
+    You will have to backtrack, those count as movements. ( Hitting deadends etc. )
+    Graph is undirected
+    MVP: less than 2000 moves
 
+(If room has been explored, do not enter?)
+The whole graph is connected, no islands
+Known minimum may be 917 moves
 
-
+Helpful methods
+player.current_room.id`, `player.current_room.get_exits()` and `player.travel(direction)
 
 
 
