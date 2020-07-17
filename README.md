@@ -74,7 +74,7 @@ building graph as we go
 
         nodes: Rooms  (room)
         edges: connected n/s/e/w
-        
+        adjacency list for graph, populated as you go
         dictionary: 
             key = room
             values = direction with its ? default then room num or none
@@ -97,6 +97,7 @@ Known minimum may be 917 moves
 Helpful methods
 player.current_room.id`, `player.current_room.get_exits()` and `player.travel(direction)
 
+Must populate the traversal path with directions, including backtracking when gets to dead end
 
 
 
@@ -108,7 +109,8 @@ player.current_room.id`, `player.current_room.get_exits()` and `player.travel(di
 
 
 
-
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 ## Rubric
 | OBJECTIVE | TASK | 1 - DOES NOT MEET Expectations | 2 - MEETS Expectations | 3 - EXCEEDS Expectations | SCORE |

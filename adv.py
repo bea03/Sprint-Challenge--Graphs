@@ -30,6 +30,28 @@ player = Player(world.starting_room)
 # traversal_path = ['n', 'n']
 traversal_path = []
 
+#previous visited rooms:
+prev_rooms = []
+
+'''
+#dictionary of visited rooms
+dictionary: 
+    key = room
+    values = direction with its ? default then room num or none
+'''
+visited = {}
+
+#reverse directions:
+reverse_dir = {'n': 's', 'e': 'w', 'w': 'e', 's': 'n'}
+
+#add the starting room the player is in to the visited dictionary:
+visited[player.current_room.id] = player.current_room.get_exits()
+#should look like: 
+#{
+#  0: {'n': '?', 's': '?', 'w': '?', 'e': '?'}
+#}
+
+
 
 
 # TRAVERSAL TEST
