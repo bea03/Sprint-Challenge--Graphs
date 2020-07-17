@@ -36,7 +36,7 @@ prev_rooms = []
 '''
 #dictionary of visited rooms
 dictionary: 
-    key = room
+    key = room id
     values = direction with its ? default then room num or none
 '''
 visited = {}
@@ -50,8 +50,6 @@ visited[player.current_room.id] = player.current_room.get_exits()
 #{
 #  0: {'n': '?', 's': '?', 'w': '?', 'e': '?'}
 #}
-
-
 
 
 # TRAVERSAL TEST

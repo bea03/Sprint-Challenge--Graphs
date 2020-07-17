@@ -94,20 +94,12 @@ One list tracking all moves:
 The whole graph is connected, no islands
 Known minimum may be 917 moves
 
+must check if room is visited and if there are any ? 
+
 Helpful methods
 player.current_room.id`, `player.current_room.get_exits()` and `player.travel(direction)
 
 Must populate the traversal path with directions, including backtracking when gets to dead end
-
-
-
-
-
-
-
-
-
-
 
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
