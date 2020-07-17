@@ -82,7 +82,7 @@ building graph as we go
         finished when graph has no ? (that means not explored) and 0-499 rooms
 
 Has it been explored?
-    if no: preform BFS with this as starting node
+    if no: preform DFS with this as starting node
     yes: next node
 
 One list tracking all moves:
